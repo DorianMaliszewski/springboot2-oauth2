@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+spring:
+  profiles:
+    active: default
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: validate
+
+
+app:
+  check-user-scopes: true
+  base-url: http://localhost:3000
