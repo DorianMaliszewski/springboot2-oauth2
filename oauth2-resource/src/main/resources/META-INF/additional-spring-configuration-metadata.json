@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "app.base-url",
+      "type": "java.lang.String",
+      "description": "Description for app.base-url."
+    },
+    {
+      "name": "app.oauth.url",
+      "type": "java.lang.String",
+      "description": "Description for app.oauth.url."
+    },
+    {
+      "name": "app.oauth.client-id",
+      "type": "java.lang.String",
+      "description": "Description for app.oauth.client-id."
+    },
+    {
+      "name": "app.oauth.client-secret",
+      "type": "java.lang.String",
+      "description": "Description for app.oauth.client-secret."
+    },
+    {
+      "name": "app.oauth.resource-id",
+      "type": "java.lang.String",
+      "description": "Description for app.oauth.resource-id."
+    }
+  ]
+}

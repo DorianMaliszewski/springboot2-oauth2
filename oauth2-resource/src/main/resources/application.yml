@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost/test_resource
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+app:
+  base-url: http://localhost:3000
+  oauth:
+    url: http://localhost:9090
+    client-id: myapplication
+    client-secret: secretPassword
+    resource-id: ms/admin
