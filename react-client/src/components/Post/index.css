@@ -1,0 +1,13 @@
+.text-muted {
+  font-style: italic;
+  font-size: 15px;
+  color: grey;
+}
+
+.post {
+  border-bottom: 1px solid grey;
+}
+
+.post h3 {
+  color: #6f6f6f;
+}

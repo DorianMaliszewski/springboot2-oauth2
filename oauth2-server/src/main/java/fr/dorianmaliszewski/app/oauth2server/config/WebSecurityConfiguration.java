@@ -40,8 +40,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.cors().disable().csrf().disable().authorizeRequests()
-                .antMatchers(HttpMethod.OPTIONS, "/oauth/token").permitAll()
+        http.cors().and().csrf().disable().authorizeRequests()
+                .antMatchers("/oauth/**").permitAll()
                 .antMatchers("/api/admin/**").permitAll()
                 .and()
                 .sessionManagement()
@@ -54,6 +54,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                         (httpServletRequest, httpServletResponse, e) -> httpServletResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED)
                 );
     }
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
